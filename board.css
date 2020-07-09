@@ -1,0 +1,186 @@
+:root {
+    font-size: 14px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom:0;
+}
+
+.heading {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}
+
+.title{
+   color: #fff;
+   font-size: 1rem;
+}
+
+.title-block{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    margin-bottom:0;
+    padding:0.5rem;
+}
+
+.task-list-more {
+    margin: 0 4px;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+    overflow-y: hidden;
+}
+
+.lists-container {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    padding: 0.8rem;
+    margin-top: 100px;
+    margin-left: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex: 0 0 17rem;
+    background-color: #b48694;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+.list-items {
+    padding: 0 0.5rem 0.5rem;
+    overflow-y: auto;
+    margin: 0.5rem;
+}
+
+.list-items li{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    background-color: #fff;
+    padding: 0.65rem 0.6rem;
+    color: #4d4d4d;
+    border-bottom: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    margin-bottom: 0.6rem;
+    cursor: pointer;
+}
+
+.list-items li:last-of-type{
+    margin-bottom: 0;
+}
+
+.list-items li:hover {
+    background-color: #eee;
+    color: #8f8080;
+}
+
+.list-items li .list-edit {
+    float: right;
+    display: none;
+}
+
+.list-items li:hover .list-edit{
+    display:inline;
+}
+
+.full-width-input {
+    display: block;
+    width: 94%;
+    padding: 1rem;
+    border: 1px solid lightgrey;
+    font-size: 1em;
+    resize: none;
+    margin:0.5rem;
+}
+
+ /*Button Styling*/ 
+.card-btn {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #b48694;
+    padding: 0 0.6rem 0.5rem;
+    margin: 0 0.5rem 0.3rem;
+    border-radius: 0.3rem;
+    border:none;
+    text-align: left;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+.list-btn {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #b48694;
+    padding: 0.5rem;
+    text-align: left;
+    border-radius: 0.3rem;
+    border:none;
+    cursor: pointer;
+}
+
+.list-btn:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+.btn-inline {
+    display: inline-block;
+    background-color: #808000;
+    color:#fff;
+    width: auto;
+    margin-left: 0.5rem;
+    margin-right: 0.8rem;
+    padding:0.5rem;
+}
+
+.btn-inline:hover{
+    color:#fff;
+    opacity:0.7;
+}
+/* Input and textarea*/
+input, textarea {
+    border: none;
+    outline: none;
+}
+/*Add card and title*/
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+
+.add-card-cancel, .add-list-cancel {
+    position: relative;
+    top: 3px;
+}
+
+/*Pointer styling*/
+.pointer {
+    cursor: pointer !important;
+}
+
+.pointer:hover {
+    opacity: 0.7;
+}
+
+.pointer:active {
+    outline: none;
+}
+
+/*Script Id*/
+#c5, #div2, #div4{
+    display: none;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Trello </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="topbar.css">
+        <link rel="stylesheet" href="board.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    </head>
+    <body>  
+      <!-- Navigation bar --> 
+         <nav class="navbar">
+            <ul class="menu">
+                <li class="pointer">
+                    <i class="home fas fa-home"></i>
+                </li>
+                <li class="pointer">
+                    <i class="boards fas fa-th-list"></i>
+                    Boards
+                </li>
+                <li class="menu-input">
+                    <input type="text" />
+                </li>
+            </ul>
+            <div class="app-title">
+                Tralala
+            </div>
+            <div class="actions">
+                <span class="pointer">
+                    <i class="fas fa-plus" id="add-board"></i>
+                </span>
+                <span class="pointer">
+                    <i class="fas fa-user" id="profile-image"></i>
+                </span>
+            </div>
+         </nav>
+        <!-- End of nav-->
+        
+        <!--Div board conatiner-->
+        <div class="container">
+               <div class="board-menu">
+                    <div class="title">Frontend Training</div>
+                    <div class="board-show-menu pointer">
+                        <i class="fas fa-ellipsis-v"></i>
+                        Show menu
+                    </div>
+                </div>
+             <div class="lists-container">
+                <div class="list">
+                    <div class="title-block">
+                       <h3 class="heading"> To Do </h3> 
+                           <span class="task-list-more pointer">...</span>
+                    </div>
+                   
+                   <ul class="list-items">
+                    <li> Learn HTML <i class="list-edit fas fa-pencil-alt pointer"></i></li>
+                    <li> Learn CSS <i class="list-edit fas fa-pencil-alt pointer"></i> </li>
+                    <li> Learn JavaScript <i class="list-edit fas fa-pencil-alt pointer"></i></li>
+                    <li> Learn PHP <i class="list-edit fas fa-pencil-alt pointer"></i> </li>
+                   </ul>   
+                        <button id="m1" class="card-btn">+ Add another Card </button>
+                           <div id="c5" class="add-card-form">
+                            <form>
+                             <textarea rows="3" placeholder="Enter a title for this card..." class="full-width-input"></textarea>
+                             <div class="add-card-form-actions">
+                                <button class="card-btn btn-inline">Add Card</button>
+                                <i id="i1" class="fas fa-2x fa-times add-card-cancel pointer"></i>
+                             </div>
+                            </form>
+                         </div>
+                </div>
+    
+                 <div class="list">
+                     <div class="title-block">
+                        <h3 class="heading"> Doing </h3> 
+                            <span class="task-list-more pointer">...</span>
+                     </div>
+                    
+                    <ul class="list-items">
+                     <li> Prepare Resume <i class="list-edit fas fa-pencil-alt pointer"></i></li>
+                     <li> Project <i class="list-edit fas fa-pencil-alt pointer"></i> </li>
+                    </ul>   
+                    <button class="card-btn">+ Add another card </button>
+    
+                 </div>
+    
+                 <div class="list">
+                    <div class="title-block">
+                        <h3 class="heading"> Testing/Verifying </h3> 
+                            <span class="task-list-more pointer">...</span>
+                     </div>
+                    
+                    <ul class="list-items">
+                     <li> Twitter App frontend <i class="list-edit fas fa-pencil-alt pointer"></i></li>
+                    </ul>   
+                    <button class="card-btn">+ Add another card </button>
+    
+                 </div>
+
+                 <div class="list">
+                    <div class="title-block">
+                        <h3 class="heading"> Deploying </h3> 
+                            <span class="task-list-more pointer">...</span>
+                     </div>
+                    <ul class="list-items">
+                     <li> Twitter App backend <i class="list-edit fas fa-pencil-alt pointer"></i> </li>
+                    </ul>   
+                    <button class="card-btn">+ Add another card </button>
+    
+                 </div>
+
+                 <div class="list">
+                    <div class="title-block">
+                        <h3 class="heading"> Done </h3> 
+                            <span class="task-list-more pointer">...</span>
+                     </div>
+                    <ul class="list-items">
+                     <li> Assignment <i class="list-edit fas fa-pencil-alt pointer"></i></li>
+                    </ul>   
+                    <button class="card-btn">+ Add another card </button>
+                 </div>
+
+                 <div class="list">
+                    <button id="div1" class="list-btn"> + Add another list </button>
+                    <div id="div2" class="add-list-form">
+                        <form>
+                            <textarea rows="3" placeholder="Enter list title..." class="full-width-input"></textarea>
+                            <div class="add-list-form-actions">
+                                <button class="list-btn btn-inline">Add List</button>
+                                <i class="fas fa-2x fa-times add-list-cancel pointer"></i>
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+                 
+                 <div class="list">
+                    <button id="div3" class="list-btn"> + Add another list </button>
+                    <div id="div4" class="add-list-form">
+                        <form>
+                            <textarea rows="3" placeholder="Enter list title..." class="full-width-input"></textarea>
+                            <div class="add-list-form-actions">
+                                <button class="list-btn btn-inline">Add List</button>
+                                <i class="fas fa-2x fa-times add-list-cancel pointer"></i>
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+               </div>  
+        </div>
+
+        <!-- External Javascript -->
+        <script src="myScript.js"></script>
+    </body>
+</html>
